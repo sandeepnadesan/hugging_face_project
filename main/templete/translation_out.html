@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Result</title>
+    <style>
+        body {
+            background: url('https://media.licdn.com/dms/image/D5612AQGAiZ5jPMEMuQ/article-cover_image-shrink_600_2000/0/1681812674198?e=2147483647&v=beta&t=CLaj2d433Wo23CO4SWtQaIIaksAQ2fIuDBRxjh6Lsg8') center center fixed; /* Add your image path here */
+            background-size: cover; /* Cover the entire viewport */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 0px;
+            color: rgb(8, 8, 8); /* White Text */
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Make the body take the full height of the viewport */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .result-container {
+            background-color: #fad7d7; /* White Result Background */
+            border-radius: 8px;
+            padding: 20px;
+            margin: 0 ; /* Center the container */
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle Box Shadow */
+        }
+
+        .result-text {
+            font-weight: bold;
+            color: #0c0c0c; /* Dark Gray Text */
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #00191f; /* Light Gray Link Text */
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        a:hover {
+            color: #bdc3c7; /* Slightly Darker Gray Hover Effect */
+        }
+
+        .image-container {
+            margin-top: 30px;
+        }
+
+        .language-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="result-container">
+        <h1>Translation Result</h1>
+        <p><strong> Input text:</strong> {{ input_text }}</p>
+        <p><span class="result-text">Translation in German:</span> {{ output_text }}</p>
+
+        <div class="image-container">
+            <!-- Replace the above URL with the actual URL of your German language image -->
+        </div>
+
+        <a href="/">Go Back</a>
+    </div>
+</body>
+
+</html>

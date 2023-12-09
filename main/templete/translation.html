@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #4A148C, #673AB7); /* Gradient background */
+            color: #0f0101; /* Text color */
+            margin: 0;
+            padding: 50;
+            display: flex;
+            justify-content:right;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://e0.pxfuel.com/wallpapers/520/935/desktop-wallpaper-language-language-learn-english.jpg'); /* Add the path to your image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            background-color:rgb(249, 249, 196); /* Semi-transparent white background for the form */
+            border-radius: 50px;
+            padding: 100px;
+            text-align: right;
+        }
+
+        h1 {
+            color: #141313; /* Header text color */
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input {
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #009688; /* Button color */
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00796b; /* Button hover color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Neural Machine Translation</h1>
+        <form method="post">
+            <label for="input_text">Enter text in English:</label>
+            <input type="text" id="input_text" name="input_text" value="{{ input_text }}" required>
+            <button type="submit">Translate</button>
+        </form>
+    </div>
+</body>
+
+</html>
